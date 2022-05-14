@@ -12,6 +12,7 @@
     /* bacground colors */
     --main-bg-cl: #FFFFFF;
     --secondary-bg-cl: #F5F4FA;
+    --hero-bg-cl: #C4C4C4;
     --dark-bg-cl: #2F303A;
     --btn-hover-cl: #188CE8;
     --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -194,7 +195,16 @@ ul {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--dark-bg-cl);
+    background-color: var(--hero-bg-cl);
+
+    max-width: 1600px;
+    min-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-dg.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-title {
@@ -338,7 +348,8 @@ ul {
     padding-bottom: 30px;
 }
 
-.team-title {
+.team-title,
+.clients-title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -415,6 +426,38 @@ ul {
     fill: var(--icon-cl);
 } */
 
+/* Клиенты */
+
+.clients {
+    display: flex;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid var(--icon-cl);
+    color: var(--icon-cl);
+}
+
+.clients-icon {
+    fill: currentColor
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: var(--accent-cl);
+    color: var(--accent-cl);
+}
+
 /* подвал */
 
 .footer {
@@ -455,6 +498,56 @@ color: var(--address-link-cl);
 .address .link:hover,
 .address .link:focus {
     color: var(--accent-cl);
+}
+
+.main-footer {
+    display: flex;
+}
+
+.address:not(:last-child) {
+    margin-right: 70px;
+}
+
+.join-block {
+    margin-top: 12px;
+}
+
+.join-title {
+    margin-bottom: 20px;
+    color: var(--wigte-cl);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.socials.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+    fill: var(--wigte-cl);
+}
+
+.socials .link:hover,
+.socials .link:focus {
+    background-color: var(--accent-cl);
 }
 
 /* секция портфолио */
