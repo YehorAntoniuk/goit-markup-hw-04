@@ -8,6 +8,7 @@
     --wigte-cl: #FFFFFF;
     --logo-heafer-cl: #000000;
     --address-link-cl: rgba(255, 255, 255, 0.6);
+    --icon-cl: #AFB1B8;
     /* bacground colors */
     --main-bg-cl: #FFFFFF;
     --secondary-bg-cl: #F5F4FA;
@@ -339,6 +340,8 @@ ul {
 }
 
 .team-text {
+    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 1.19;
     
@@ -347,6 +350,48 @@ ul {
     
     color: var(--main-txt-cl);
 }
+
+.socials-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--wigte-cl);
+    color: var(--icon-cl);
+
+    border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--accent-cl);
+    color: var(--wigte-cl);
+}
+
+.socials-icon {
+    fill: currentColor;
+}
+
+/* .socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+    fill: var(--wigte-cl);
+}
+
+.socials-icon {
+    fill: var(--icon-cl);
+} */
 
 /* подвал */
 
