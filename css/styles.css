@@ -593,6 +593,8 @@ color: var(--address-link-cl);
 .gallery-btn:focus {
     background-color: var(--btn-hover-cl);
     color: var(--wigte-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .gallery .gallery-list {
     display: flex;
@@ -617,6 +619,11 @@ color: var(--address-link-cl);
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: 0;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-title {
