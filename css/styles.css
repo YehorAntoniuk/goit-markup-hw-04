@@ -178,6 +178,16 @@ ul {
     color: var(--main-txt-cl);
 }
 
+.contact-link {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 /* секция герой */
 
 .hero-section {
@@ -228,6 +238,7 @@ ul {
 .benefits-list {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .benefits-item {
@@ -258,6 +269,17 @@ ul {
     letter-spacing: 0.03em;
     
     color: var(--main-txt-cl);
+}
+
+.benefits-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--secondary-bg-cl);
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 /* секция чем занимаемся */
