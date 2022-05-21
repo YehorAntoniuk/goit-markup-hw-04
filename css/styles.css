@@ -303,12 +303,26 @@ ul {
 }
 
 .work-item {
+    position: relative;
     margin-right: 30px;
 }
 
 .work-item:last-child {
     margin-right: 0;
 }
+
+.work-item::before {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+
+
+} 
 
 .work-title {
     margin-bottom: 50px;
